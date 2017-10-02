@@ -1,0 +1,7 @@
+node_modules
+.tmp
+/dist
+bower_components
+
+test
+/bower_components
