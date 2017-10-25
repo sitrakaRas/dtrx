@@ -20,10 +20,10 @@ $(document).ready(function() {
 
     /* ------------------  5.NAVBAR SPY ------------------ */
 
-    var HeaderID = "#navbar-spy",
-        Body = $("body");
-    if ($("header").has(HeaderID)) {
-        Body.attr("data-spy", "scroll").attr("data-target", HeaderID);
+    var HeaderID = '#navbar-spy',
+        Body = $('body');
+    if ($('header').has(HeaderID)) {
+        Body.attr('data-spy', 'scroll').attr('data-target', HeaderID);
         Body.scrollspy({
             target: HeaderID
         });
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     /* ------------------ 6.HEADER ------------------ */
 
-    var $navAffix = $("nav");
+    var $navAffix = $('nav');
     $navAffix.affix({
         offset: {
             top: 50/* Change offset form top */
@@ -40,31 +40,31 @@ $(document).ready(function() {
 
      /* ------------------  4.Background ------------------ */
 
-    var $bgSection = $(".bg-section");
-    var $bgPattern = $(".bg-pattern");
-    var $colBg = $(".col-bg");
+    var $bgSection = $('.bg-section');
+    var $bgPattern = $('.bg-pattern');
+    var $colBg = $('.col-bg');
 
     $bgSection.each(function() {
-        var bgSrc = $(this).children("img").attr("src");
+        var bgSrc = $(this).children('img').attr('src');
         var bgUrl = 'url(' + bgSrc + ')';
-        $(this).parent().css("backgroundImage", bgUrl);
-        $(this).parent().addClass("bg-section");
+        $(this).parent().css('backgroundImage', bgUrl);
+        $(this).parent().addClass('bg-section');
         $(this).remove();
     });
 
     $bgPattern.each(function() {
-        var bgSrc = $(this).children("img").attr("src");
+        var bgSrc = $(this).children('img').attr('src');
         var bgUrl = 'url(' + bgSrc + ')';
-        $(this).parent().css("backgroundImage", bgUrl);
-        $(this).parent().addClass("bg-pattern");
+        $(this).parent().css('backgroundImage', bgUrl);
+        $(this).parent().addClass('bg-pattern');
         $(this).remove();
     });
 
     $colBg.each(function() {
-        var bgSrc = $(this).children("img").attr("src");
+        var bgSrc = $(this).children('img').attr('src');
         var bgUrl = 'url(' + bgSrc + ')';
-        $(this).parent().css("backgroundImage", bgUrl);
-        $(this).parent().addClass("col-bg");
+        $(this).parent().css('backgroundImage', bgUrl);
+        $(this).parent().addClass('col-bg');
         $(this).remove();
     });
 
