@@ -156,8 +156,10 @@
 
 	?>
 	<div class="slogan-partie hide">
+		<p class="bounceIn">
 		<?php
 			echo get_bloginfo('description');
 		?>
+		</p>
 	</div>
 	<div class="realfactory-page-wrapper" id="realfactory-page-wrapper" >

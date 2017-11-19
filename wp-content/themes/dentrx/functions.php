@@ -531,3 +531,22 @@
 	}
 	add_shortcode('slider_partenaire','partenaireSlide');
 
+	//lien retour a la boutique
+	//add back to store button after cart
+	add_action('woocommerce_after_add_to_cart_button', 'themeprefix_back_to_store');
+	// function themeprefix_back_to_store() { 
+	// 	global $post, $product;
+	// 	$terms = get_the_terms( $post->ID, 'product_cat' );
+	// 	foreach ($terms  as $term  ) {
+	// 		$product_cat_id = $term->term_id;
+	// 		echo "<div class='btn-back'><a class='button wc-backward' href='".get_term_link( $product_cat_id, 'product_cat' )."'>Retourner à la page catégorie du produit</a></div>";
+	// 		break;
+	// 	} 
+	// }
+	function themeprefix_back_to_store() { ?>
+	<div class='btn-back'>
+		<a class="button wc-backward" href="<?php echo get_permalink( 4332 ); ?>"><?php _e( 'Retourner a la boutique', 'woocommerce' ) ?></a>
+	</div>
+	<?php
+	}
+
