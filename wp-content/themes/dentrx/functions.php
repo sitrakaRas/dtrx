@@ -504,6 +504,35 @@
 		);
 		register_post_type( 'partenaire', $args );
 
+		/* POST TYPE partenaire */
+		$labels = array(
+			'name'                => 'intervention',
+			'singular_name'       => 'intervention',
+			'menu_name'           => 'intervention',
+			'parent_item_colon'   => 'Elément parent',
+			'all_items'           => 'Tous les interventions',
+			'view_item'           => 'Voir intervention',
+			'add_new_item'        => 'Ajouter un intervention',
+			'add_new'             => 'Ajouter',
+			'edit_item'           => 'Editer un intervention',
+			'update_item'         => 'Mettre à jour',
+			'search_items'        => 'Chercher',
+			'not_found'           => 'Aucun résultat trouvé',
+			'not_found_in_trash'  => 'Aucun résultat trouvé dans la corbeille',
+		);
+		
+		$args = array(
+			'hierarchical'      => true,
+			'label'               => 'intervention',
+			'description'         => 'intervention',
+			'labels'              => $labels,
+			'supports'            => array( 'title' ),
+			'rewrite'           => array( 'slug' => 'intervention' ),
+			'public'              => true,
+			'has_archive'         => true,
+		);
+		register_post_type( 'intervention', $args );
+
 	}
 
 	//sidebar shortcode

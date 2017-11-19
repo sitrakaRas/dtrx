@@ -1527,7 +1527,54 @@ html.mm-opening.realfactory-mmenu-right .realfactory-mobile-header-wrap{ -webkit
   color: #007BC4;
 }
 
+a.button-intervention{
+    border-radius : 0px;
+    text-decoration:none !important;
+    color : #fff;
+    background-color: #2F2F2F !important;
+    font-weight: normal; 
+    text-align: center;
+}
+
+.titre-height{
+  height: 315px;
+}
+
+footer .realfactory-footer-wrapper{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4e7886+0,80c4e9+49,4e7886+100 */
+	background: #4e7886; /* Old browsers */
+	background: -moz-linear-gradient(top, #4e7886 0%, #80c4e9 49%, #4e7886 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #4e7886 0%,#80c4e9 49%,#4e7886 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #4e7886 0%,#80c4e9 49%,#4e7886 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e7886', endColorstr='#4e7886',GradientType=0 ); /* IE6-9 */
+}
+
+.wpgmp_infowindow .fc-item-title{
+	text-align: center;
+}
+.wpgmp_infowindow .fc-badge.info{
+	display: block;
+	margin-top: 10px;
+}
+
 @media (min-width: 1024px){
+	/*header{
+		position : fixed;
+		width : 100%;
+		top : 0;
+		z-index: 9999;
+	}
+	
+	.realfactory-navigation-bar-wrap.realfactory-style-transparent{
+		position: fixed;
+		top : 167px;
+		width : 100%;
+		z-index: 9999;
+	}
+	.realfactory-body-outer-wrapper{
+		padding-top: 166px;
+	}*/
+
 	#apporteur-text .text-anim{
 		opacity : 0;
 		-webkit-transition: opacity 0.5s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
