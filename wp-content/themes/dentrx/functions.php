@@ -521,3 +521,14 @@
 		return ob_get_clean();   
 	} 
 	add_shortcode( 'listing_partenaire', 'listing_partenaire' );
+
+
+
+	
+	//slider partenaire
+	function partenaireSlide(){
+		ob_start();
+		get_template_part('content/sliderpart');
+		return ob_get_clean();
+	}
+	add_shortcode('slider_partenaire','partenaireSlide');
