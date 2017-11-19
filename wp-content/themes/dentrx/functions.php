@@ -523,8 +523,6 @@
 	add_shortcode( 'listing_partenaire', 'listing_partenaire' );
 
 
-
-	
 	//slider partenaire
 	function partenaireSlide(){
 		ob_start();
@@ -532,3 +530,4 @@
 		return ob_get_clean();
 	}
 	add_shortcode('slider_partenaire','partenaireSlide');
+

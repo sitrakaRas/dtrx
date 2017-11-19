@@ -155,4 +155,9 @@
 		} // enable header area
 
 	?>
+	<div class="slogan-partie hide">
+		<?php
+			echo get_bloginfo('description');
+		?>
+	</div>
 	<div class="realfactory-page-wrapper" id="realfactory-page-wrapper" >

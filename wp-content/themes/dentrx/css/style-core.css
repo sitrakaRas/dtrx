@@ -1624,6 +1624,28 @@ footer .realfactory-footer-wrapper{
    /*border : solid 1px #004873;*/
 }
 
+.realfactory-fixed-navigation.realfactory-style-slide .realfactory-logo-inner img{ 
+	max-height: 90px !important; 
+	width: auto;
+	position : absolute;
+	top : 2px; 
+	z-index: 1010;
+}
+
+.slogan-partie{
+	text-transform: uppercase;
+	background-color: #fff;
+	text-align: center;
+	z-index: 1000;
+	position: relative;
+	font-size: 24px;
+	color : #007BC4;
+	font-weight: 600;
+	height: 65px;
+	line-height: 65px;
+}
+
+
 @media (min-width: 1024px){
 	/*header{
 		position : fixed;

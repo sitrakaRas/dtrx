@@ -810,6 +810,16 @@
 						t.sticky_nav.addClass('realfactory-fixed-navigation realfactory-animate-fixed-navigation');
 						t.sticky_nav.css('display', 'none').slideDown(200);
 						$(window).trigger('realfactory-navigation-slider-bar-animate');
+						console.log('style_slide fixed');
+						var logo = $("header .realfactory-logo-inner").clone();
+						var slogan_clone = $(".slogan-partie").clone();
+						if(t.sticky_nav.find(".realfactory-logo-inner").length <= 0){
+							logo.appendTo(t.sticky_nav);							
+						}
+
+						if(t.sticky_nav.find(".slogan-partie").length <= 0){
+							slogan_clone.prependTo(t.sticky_nav).toggleClass('hide');
+						}
 					}
 				}else{
 
@@ -825,6 +835,9 @@
 						t.sticky_nav.css('display', 'block');
 
 						$(window).trigger('realfactory-navigation-slider-bar-animate');
+						t.sticky_nav.find(".realfactory-logo-inner").remove();
+						// t.sticky_nav.find(".slogan-partie").toggleClass('hide');
+						t.sticky_nav.find(".slogan-partie").remove();
 					}
 				}
 			});
